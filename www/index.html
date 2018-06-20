@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name ="viewport" content ="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<title>Lector de Noticias</title>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+<link rel ="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/estilos.css" />
+
+<meta name="generator" content="Geany 1.27" />
+</head>
+
+<body>
+
+	<div class="container">
+
+		<!-- Esto es el menú de la APP -->
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-personalizado">
+			
+		<a class="navbar-brand" href="#">LectorRSS</a>
+			
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			
+					<span class="navbar-toggler-icon"></span>
+			
+				</button>
+			
+		<div class="collapse navbar-collapse" id="navbarMenu">
+			
+			<div class="navbar-nav">
+				<a id="menu_inicio" class="nav-item nav-link" href="#">Inicio </a>
+			
+				<a id="menu_favoritos" class="nav-item nav-link" href="#">Favoritos</a>
+			
+				<a id="menu_personalizado" class="nav-item nav-link" href="#">Añadir personalizado</a>
+			
+				<a id="menu_predefinido" class="nav-item nav-link" href="#">Añadir predefinido</a>
+			
+				<a id="menu_ayuda" class="nav-item nav-link" href="#">Ayuda</a>
+
+				<a id="menu_acerca_de" class="nav-item nav-link" href="#">Acerca de...</a>
+			
+			</div>
+			
+		</div>
+			
+		</nav>
+			
+		 <!-- Este panel es la pantalla de bienvenida o inicial -->
+
+		 <div id="panel_inicio" class="panel">
+			
+				<h3>Inicio</h3>
+				<h4>Bienvenido a tú lector de noticias, podrás obtener las noticias de los periódicos
+					más importantes del país además de poder añadir aquellos que consideres de interés.
+				</h4>
+		</div>	
+			
+		<!-- Este panel tiene el formulario para añadir un canal RSS manualmente -->
+			
+		<div id="panel_personalizado" class="panel">
+			
+			<h3>Añadir manualmente</h3>
+			
+				<input type="text" id="input_nombre" placeholder="Nombre del canal"/>
+			
+				<input type="url" id="input_url" placeholder="URL del canal"/>
+			
+				<button id="boton_test">Detectar tipo canal</button>
+			
+		</div>
+			
+			
+			
+		<!-- Este panel mostrará un select con los canales añadidos -->
+			
+		<div id="panel_favoritos" class="panel">
+			
+			<h3>Listado de canales favoritos</h3>
+			
+				<select id="select_canal"></select>
+			
+					<button id="boton_consultar">consultar</button>
+			
+					<button id="boton_borrar">borrar</button>
+
+					<input type="text" id="input_actualizar"/>
+			
+					<button id="boton_actualizar">actualizar</button>
+			
+		</div>
+			
+			
+			
+		<!-- Este panel mostrará las noticias al pulsar en "consultar" -->
+			
+		<div id="panel_mostrar_noticias" class="panel">
+			
+			<h3>Mostrando noticias...</h3>
+			
+		</div>
+			
+			
+			
+		<!-- Este panel permite añadir un canal predefinido a la lista de favoritos -->
+			
+		<div id="panel_predefinido" class="panel">
+			
+			<h3>Añadir predefinido</h3>
+
+			<select id="select_predeterminados"></select>
+			
+			<button id="boton_añadir">Añadir</button>
+			
+		</div>
+			
+			
+			
+		<!-- Este panel mostrará la ayuda -->
+			
+		<div id="panel_ayuda" class="panel">
+
+			<h3>Ayuda</h3>
+			<p>Nuestra aplicación te ofrece los periódicos más relevantes del país, podrás acceder a ellos
+				en las pestaña "Añadir Predefinidos"
+			</p>
+			</br>
+			<p>Si quieres añadir algún canal de interés también te ofrece esa posibilidad en la pestaña "Añadir
+				Personalizado". Para ello tendrás que dar un nombre cómo referencia a dicho canal e introducir su 
+				URL RSS o ATOM.
+			</p>
+			</br>
+			<p>
+				Todos nuestros canales de noticias aparecerán en la pestaña Favoritos.
+			</p>
+
+		</div>
+
+		<!-- Este panel mostrará la Acerca de... -->
+			
+		<div id="panel_acerca_de" class="panel">
+			
+			<h3>Datos de la app</h3>
+
+				<h5>Nombre</h5>
+                <p>Francisco Javier Hidalgo Frías</p>
+                <h5>Asignatura</h5>
+                <p>Lenguaje de Marcas y Signos</p>
+                <h5>Centro de enseñanza</h5>
+                <p>I.E.S Virgen del Carmen (Jaén)</p>
+                <h5>Fecha de creación</h5>
+                <p>Mayo - 2018</p>
+					
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
